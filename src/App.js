@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Analytics from "./components/Analytics";
+import Dashboard from "./components/Dashboard";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import ErrorPage from "./components/ErrorPage";
+import Inventory from "./components/Inventory";
+import SpringDeets from "./components/SpringDeets";
+import Download from "./components/Download";
+import Delete from "./components/Delete";
+import Profile from "./components/Profile";
+import NewSpring from "./components/NewSpring";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Home />
+      <Analytics />
+      <Dashboard />
+      <Cards />
+      <Footer />
+      <ErrorPage />
+      <Inventory />
+      <SpringDeets />
+      <Download/>
+      <Delete/>
+      <Profile/>
+      <NewSpring/>
     </div>
   );
 }
